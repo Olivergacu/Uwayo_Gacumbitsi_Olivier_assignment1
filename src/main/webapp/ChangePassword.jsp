@@ -1,12 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Hello</title>
-</head>
-<body>
-	<h1>Change password</h1>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Servlet</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Change Password Form</span></div>
+        <form action=web/LoginServlet method="post">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" name="username" required>
+          </div>
+          <div class="row button">
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
